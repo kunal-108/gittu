@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="box">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis, illum vero? Rem aperiam cumque omnis sunt culpa
+                dicta, nisi necessitatibus voluptatibus tempore sapiente alias
+                eius voluptatem beatae, optio corrupti consequuntur adipisci,
+                exercitationem odio possimus dolorum doloribus. Aliquam,
+                voluptatibus ab. Amet odio in esse deserunt quisquam distinctio
+                aliquid, voluptas nesciunt laboriosam?
+            </p>
+        </div>
+        <button id="btn">Button</button>
+
+        <script>
+            let button = document.getElementById("btn");
+            let box = document.getElementById("box");
+            let p = box.querySelector("p");
+            console.log(p);
+
+            button.addEventListener("click", function () {
+                box.style.height = "auto";
+                box.style.padding = 20 + "px";
+                p.children.style.scale = 1;
+            });
+        </script>
+    </body>
+</html>
